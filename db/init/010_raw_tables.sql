@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS raw.train (
   store_nbr     INTEGER NOT NULL,
   item_nbr      INTEGER NOT NULL,
   unit_sales    DOUBLE PRECISION,
-  onpromotion   TEXT
+  onpromotion   BOOLEAN
 );
 
 CREATE TABLE IF NOT EXISTS raw.test (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS raw.test (
   date          DATE NOT NULL,
   store_nbr     INTEGER NOT NULL,
   item_nbr      INTEGER NOT NULL,
-  onpromotion   TEXT
+  onpromotion   BOOLEAN
 );
 
 CREATE TABLE IF NOT EXISTS raw.transactions (
